@@ -1,11 +1,11 @@
   
-const seleksiNilai = (nilaiAwal, nilaiAkhir, dataarray) => {
+const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     if (nilaiAkhir < nilaiAwal) {
         console.log('Harus lebih dari 5');
-    } else if (dataarray.length < 5) {
+    } else if (dataArray.length < 5) {
         console.log('data harus lebih dari 5');
     } else {
-        const arrayFilter = dataarray.filter(item => {
+        const arrayFilter = dataArray.filter(item => {
             return item > nilaiAwal && item < nilaiAkhir
         })
         const newArr = arrayFilter.sort((a, b) => {
